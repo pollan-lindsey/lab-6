@@ -31,8 +31,24 @@ this.calCustomersPH = function(){
             this.customersPH.push(cutsomers);
             //shows the amount of customers per hour in the log
         }
+    //cookies per hour
+    //render and append
 }
-//header function (has store hours)
+//locations: let <location name> = new <location name>(max and min numbers)
+// <location name>.calCustomersPerHour();
+// <locaation name>.calCookiesPerHour();
+// <location name>.<render functon name>();
+
+//header function (has store hours)(replace with my own names)
+// function renderTableHeader(){
+//     for (let i=0; i<hoursOpen.length;i++){
+//         let tableHeaderEl = document.createElement('th');
+//         let tableRow = document.createElement('tr');
+//         tableHeaderEl.textContent = `${hoursOpen[i]}`;
+//         tableRow.append(tableHeaderEl);
+//         tableHeaderContainer.append(tableRow);
+//     }
+// }
 
 
 //create table element
@@ -42,7 +58,7 @@ let tableHeaderContainer = document.createElement('thead');
 //append this to fishCookies
 //create table header element 
 let tableHeaderEl = document.createElement('th');
-//append this to thead
+//append this to thead; both this and fish cookies should be thElements
 //create table row container
 let tableRowContainer = document.getElementById('tbody'); //named tableRowContainer because it contains the row
 //append this to fish cookies
@@ -50,6 +66,15 @@ let tableRowContainer = document.getElementById('tbody'); //named tableRowContai
 let tableRow = document.createElement('tr');
 //append to tbody
 
-//put everything in a city(function)
 
 //footer funtion (grand total hourly cookies)
+//replace this with my own names
+// function renderTableFooter(){
+//     for (i=0; i < hoursOpen.length + 1; i++ ){
+//         let tablefooter = document.createElement('tfoot');
+//         tablefooter.textContent = `${this.totalDailyCookies}`;
+//         let tableRow = document.createElement('tr');
+//         tableRow.append(tablefooter);
+//     }
+
+// }
