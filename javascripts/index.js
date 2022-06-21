@@ -35,13 +35,13 @@ this.calCustomersPH = function(){
     //render and append
 }
 //locations: let <location name> = new <location name>(max and min numbers)
-// <location name>.calCustomersPerHour();
+// seattle.calCustomersPerHour();
 // <locaation name>.calCookiesPerHour();
 // <location name>.<render functon name>();
 
 //header function (has store hours)(replace with my own names)
-// function renderTableHeader(){
-//     for (let i=0; i<hoursOpen.length;i++){
+// function tableHeaderFunction(){
+//     for (let i=0; i<hours.length;i++){
 //         let tableHeaderEl = document.createElement('th');
 //         let tableRow = document.createElement('tr');
 //         tableHeaderEl.textContent = `${hoursOpen[i]}`;
@@ -65,14 +65,15 @@ let tableRowContainer = document.getElementById('tbody'); //named tableRowContai
 //create table row element
 let tableRow = document.createElement('tr');
 //append to tbody
-
+//create table footer
+let tableFooter = document.createElement('tfoot');
+//append to table row
 
 //footer funtion (grand total hourly cookies)
 //replace this with my own names
 // function renderTableFooter(){
-//     for (i=0; i < hoursOpen.length + 1; i++ ){
-//         let tablefooter = document.createElement('tfoot');
-//         tablefooter.textContent = `${this.totalDailyCookies}`;
+//     for (i=0; i < hours.length + 1; i++ ){
+//         tableFooter.textContent = `${this.totalDailyCookies}`;
 //         let tableRow = document.createElement('tr');
 //         tableRow.append(tablefooter);
 //     }
